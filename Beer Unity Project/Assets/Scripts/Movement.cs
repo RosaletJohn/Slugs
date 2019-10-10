@@ -5,26 +5,15 @@ using UnityEngine;
 public class Movement : MonoBehaviour
 
 {
-    private float moveSpeed = 0.1f;
+    private float moveSpeed = 0.2f;
     // Start is called before the first frame update
     void Start()
     {
-       
+      
     }
 
-    // Update is called once per frame
-    void Update()
+    private void FixedUpdate()
     {
         
-            //if player presses up arrow, we move the square up
-            if (Input.GetKey(KeyCode.UpArrow))
-        {
-            transform.Translate(0, moveSpeed, 0);
-        
-        }
-            else if (Input.GetKey(KeyCode.DownArrow))
-        {
-            transform.Translate(0, -moveSpeed, 0);
-        }
     }
 }
