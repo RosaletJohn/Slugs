@@ -18,5 +18,6 @@ public class MovingSquareSupport : MonoBehaviour
     {
         verticalInput = Input.GetAxis("Vertical");
         rigidbody.velocity = new Vector2(0, verticalInput * moveSpeed);
+       
     }
 }
